@@ -1,0 +1,270 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "DocItem",
+"class": "ArgumentDocItem",
+"language": "GDScript",
+"path": "res://addons/silicon.util.custom_docs/doc_item/argument_doc_item.gd"
+}, {
+"base": "DocItem",
+"class": "ClassDocItem",
+"language": "GDScript",
+"path": "res://addons/silicon.util.custom_docs/doc_item/class_doc_item.gd"
+}, {
+"base": "DocItem",
+"class": "ConstantDocItem",
+"language": "GDScript",
+"path": "res://addons/silicon.util.custom_docs/doc_item/constant_doc_item.gd"
+}, {
+"base": "Reference",
+"class": "DocExporter",
+"language": "GDScript",
+"path": "res://addons/silicon.util.custom_docs/doc_exporter/doc_exporter.gd"
+}, {
+"base": "Reference",
+"class": "DocItem",
+"language": "GDScript",
+"path": "res://addons/silicon.util.custom_docs/doc_item/doc_item.gd"
+}, {
+"base": "HTTPRequest",
+"class": "FirebaseAuth",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/auth/auth.gd"
+}, {
+"base": "Node",
+"class": "FirebaseDatabase",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/database/database.gd"
+}, {
+"base": "Node",
+"class": "FirebaseDatabaseReference",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/database/reference.gd"
+}, {
+"base": "Node",
+"class": "FirebaseDatabaseStore",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/database/database_store.gd"
+}, {
+"base": "Node",
+"class": "FirebaseDynamicLinks",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/dynamiclinks/dynamiclinks.gd"
+}, {
+"base": "Node",
+"class": "FirebaseFirestore",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/firestore/firestore.gd"
+}, {
+"base": "Resource",
+"class": "FirebaseResource",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/database/resource.gd"
+}, {
+"base": "Node",
+"class": "FirebaseStorage",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/storage/storage.gd"
+}, {
+"base": "Reference",
+"class": "FirebaseUserData",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/auth/user_data.gd"
+}, {
+"base": "Reference",
+"class": "FirestoreCollection",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/firestore/firestore_collection.gd"
+}, {
+"base": "Reference",
+"class": "FirestoreDocument",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/firestore/firestore_document.gd"
+}, {
+"base": "Reference",
+"class": "FirestoreQuery",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/firestore/firestore_query.gd"
+}, {
+"base": "Reference",
+"class": "FirestoreTask",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/firestore/firestore_task.gd"
+}, {
+"base": "DocItem",
+"class": "MethodDocItem",
+"language": "GDScript",
+"path": "res://addons/silicon.util.custom_docs/doc_item/method_doc_item.gd"
+}, {
+"base": "OculusTracker",
+"class": "OculusHandTracker",
+"language": "GDScript",
+"path": "res://addons/godot_ovrmobile/example_scenes/oculus_hand_tracker.gd"
+}, {
+"base": "OculusTracker",
+"class": "OculusTouchController",
+"language": "GDScript",
+"path": "res://addons/godot_ovrmobile/example_scenes/oculus_touch_controller.gd"
+}, {
+"base": "ARVRController",
+"class": "OculusTracker",
+"language": "GDScript",
+"path": "res://addons/godot_ovrmobile/example_scenes/oculus_tracker.gd"
+}, {
+"base": "DocItem",
+"class": "PropertyDocItem",
+"language": "GDScript",
+"path": "res://addons/silicon.util.custom_docs/doc_item/property_doc_item.gd"
+}, {
+"base": "DocItem",
+"class": "SignalDocItem",
+"language": "GDScript",
+"path": "res://addons/silicon.util.custom_docs/doc_item/signal_doc_item.gd"
+}, {
+"base": "Reference",
+"class": "StorageReference",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/storage/storage_reference.gd"
+}, {
+"base": "Reference",
+"class": "StorageTask",
+"language": "GDScript",
+"path": "res://addons/godot-firebase/storage/storage_task.gd"
+}, {
+"base": "Node",
+"class": "WIPEstimator",
+"language": "GDScript",
+"path": "res://StepDetector.gd"
+} ]
+_global_script_class_icons={
+"ArgumentDocItem": "",
+"ClassDocItem": "",
+"ConstantDocItem": "",
+"DocExporter": "",
+"DocItem": "",
+"FirebaseAuth": "",
+"FirebaseDatabase": "",
+"FirebaseDatabaseReference": "",
+"FirebaseDatabaseStore": "",
+"FirebaseDynamicLinks": "",
+"FirebaseFirestore": "",
+"FirebaseResource": "",
+"FirebaseStorage": "",
+"FirebaseUserData": "",
+"FirestoreCollection": "",
+"FirestoreDocument": "",
+"FirestoreQuery": "",
+"FirestoreTask": "",
+"MethodDocItem": "",
+"OculusHandTracker": "",
+"OculusTouchController": "",
+"OculusTracker": "",
+"PropertyDocItem": "",
+"SignalDocItem": "",
+"StorageReference": "",
+"StorageTask": "",
+"WIPEstimator": ""
+}
+
+[application]
+
+config/name="VR Walking"
+run/main_scene="res://Main.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Firebase="*res://addons/godot-firebase/firebase/firebase.tscn"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/size/always_on_top=true
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/godot-firebase/plugin.cfg", "res://addons/scatter/plugin.cfg" )
+
+[firebase]
+
+environment_variables/apiKey="AIzaSyCdcmC3TosYExUtLUVtnzSkMlojHjygLco"
+environment_variables/authDomain="raceyourselves-d8e5a.firebaseapp.com"
+environment_variables/databaseURL=""
+environment_variables/projectId="raceyourselves-d8e5a"
+environment_variables/storageBucket="raceyourselves-d8e5a.appspot.com"
+environment_variables/messagingSenderId="1053338479418"
+environment_variables/appId="1:1053338479418:web:1e2378048506d9760f3e03"
+environment_variables/measurementId="G-0HN40BD4RH"
+environment_variables/clientId=""
+environment_variables/clientSecret=""
+environment_variables/domainUriPrefix=""
+
+[gdnative]
+
+singletons=[ "res://addons/godot_ovrmobile/godot_ovrmobile.gdnlib" ]
+
+[input]
+
+move_forward={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_backward={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+camera_zoom_in={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":4,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+camera_zoom_out={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":5,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+move_sprint={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777237,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+jump={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+gui_management={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":71,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[rendering]
+
+threads/thread_model=2
+vram_compression/import_etc=true
+environment/default_environment="res://default_env.tres"
+quality/godrays/sample_number=100
+quality/godrays/use_pcf5=false
+quality/godrays/dither_amount=1.0

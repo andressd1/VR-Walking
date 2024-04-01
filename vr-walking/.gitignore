@@ -1,0 +1,14 @@
+*.o
+*.os
+.import/
+*.dblite
+*.exp
+*.lib
+*.TMP
+logs
+Thumbs.db
+.DS_Store
+addons/godot-oculus/scenes/oculus_cv1_controller_left/oculus_cv1_controller_left.obj.import
+addons/godot-oculus/scenes/oculus_cv1_controller_right/oculus_cv1_controller_right.obj.import
+addons/godot-oculus/scenes/oculus_cv1_controller_left/oculus_cv1_controller_left.obj
+addons/godot-oculus/scenes/oculus_cv1_controller_right/oculus_cv1_controller_right.obj
